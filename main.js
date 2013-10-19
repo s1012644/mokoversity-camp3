@@ -3,16 +3,19 @@ var gameModule=(function(){
 
  var timeoutVar;
  var counter=0;
- function start(){
- var canvas = document.getElementById('game');
+  var canvas = document.getElementById('game');
  var ctx = canvas.getContext('2d');
+
+ canvas.width = 480;
+ canvas.height = 320;
+ function start(){
+ 
  
  var ballX = Math.floor(Math.random() * 300);
  var ballY = Math.floor(Math.random() * 500);
  var ballR = Math.floor(Math.random() * 100);
 
- canvas.width = 480;
- canvas.height = 320;
+ 
 
  
 ctx.fillStyle = 'black';
