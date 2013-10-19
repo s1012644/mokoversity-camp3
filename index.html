@@ -53,15 +53,33 @@
     </ul>
   </div><!-- /.navbar-collapse -->
 </nav>
-<div class="row">
-	<div class="col-md-2">I</div>
-	<div class="col-md-2">RO</div>
-	 <button type="button" class="btn btn-default">Left</button>
-  <button type="button" class="btn btn-default">Middle</button>
-  <button type="button" class="btn btn-default">Right</button>	
-</div>
 
 <div id="main"></div>
 <div id="score"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div id="main"><canvas id="game"></canvas></div>
+	</div>
+		
+</div>
+
+<script>
+
+ var canvas = document.getElementById('game');
+ var ctx = canvas.getContext('2d');
+ 
+ canvas.width = 480;
+ canvas.height = 320;
+
+ 
+ctx.fillStyle = 'black';
+ctx.beginPath();
+ctx.arc(100, 150, 50, 0, Math.PI * 2 , true);
+ctx.fill();
+ 
+
+
+</script>
 </body>
 </html>
